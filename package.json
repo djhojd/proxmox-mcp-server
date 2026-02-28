@@ -1,0 +1,25 @@
+{
+  "name": "proxmox-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Proxmox VE — list resources, manage LXC containers",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js"
+  },
+  "keywords": ["mcp", "proxmox", "proxmox-ve", "lxc"],
+  "author": "djhojd (https://github.com/djhojd)",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/djhojd/proxmox-mcp-server.git"
+  },
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "undici": "^7.22.0",
+    "zod": "^4.3.6"
+  }
+}
